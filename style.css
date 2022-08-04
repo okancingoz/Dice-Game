@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+main {
+  position: relative;
+  width: 100rem;
+  height: 60rem;
+  background-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  overflow: hidden;
+  display: flex;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  color: #333;
+  background: linear-gradient(to right bottom, #70e1f5, #ffd194);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-container {
+  display: flex;
+  width: 100%;
+}
+.player-1,
+.player-2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.player-1 {
+  background: #94b49f;
+}
+.player-2 {
+  background: #cee5d0;
+}
+
+.header,
+.current {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.header {
+  margin-top: 10rem;
+}
+.title {
+  font-size: 4.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.player-score {
+  font-size: 6.4rem;
+  font-weight: 400;
+  color: #1a7f76;
+}
+.current {
+  margin-top: 18rem;
+  background: #1a7f76;
+  border-radius: 1.2rem;
+  padding: 2.4rem 4.8rem;
+}
+.current:hover {
+  background: #37a99f;
+}
+.current-label,
+.current-score {
+  color: #fbf8f1;
+}
+.current-label {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.current-score {
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+
+.buttons-container {
+  height: 100%;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-between;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.btn-top,
+.btn-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn-top {
+  margin-top: 5rem;
+  gap: 5rem;
+}
+.btn-bottom {
+  margin-bottom: 7rem;
+  gap: 2rem;
+}
+.btn {
+  background: #ccf3ee;
+  border: none;
+  text-transform: uppercase;
+  padding: 1.2rem 2.4rem;
+  border-radius: 1.2rem;
+  font-size: 1.6rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+.btn:hover {
+  background: #667a77;
+  cursor: pointer;
+  color: #fbf8f1;
+}
+.dice {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 20%;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+  margin-top: 5rem;
+}
